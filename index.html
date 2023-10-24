@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="buscar.png">
+  <title>Proyecto Final</title>
+  <style>
+    body {
+        background-color: hsl(40, 91%, 56%);
+    }
+</style>
+</head>
+<body>
+    
+   <h1>Suma y Resta de Matrices</h1>
+
+    <h2>Suma de Matrices</h2>
+    <table id="matrixA">
+        <tr>
+            <td><input type="text" id="a00" placeholder="A00"></td>
+            <td><input type="text" id="a01" placeholder="A01"></td>
+            <td><input type="text" id="a02" placeholder="A02"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="a10" placeholder="A10"></td>
+            <td><input type="text" id="a11" placeholder="A11"></td>
+            <td><input type="text" id="a12" placeholder="A12"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="a20" placeholder="A20"></td>
+            <td><input type="text" id="a21" placeholder="A21"></td>
+            <td><input type="text" id="a22" placeholder="A22"></td>
+        </tr>
+    </table>
+
+    <h2>Resta de Matrices</h2>
+    <table id="matrixB">
+        <tr>
+            <td><input type="text" id="b00" placeholder="B00"></td>
+            <td><input type="text" id="b01" placeholder="B01"></td>
+            <td><input type="text" id="b02" placeholder="B02"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="b10" placeholder="B10"></td>
+            <td><input type="text" id="b11" placeholder="B11"></td>
+            <td><input type="text" id="b12" placeholder="B12"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="b20" placeholder="B20"></td>
+            <td><input type="text" id="b21" placeholder="B21"></td>
+            <td><input type="text" id="b22" placeholder="B22"></td>
+        </tr>
+    </table>
+
+    <h2>Resultado de la Suma de Matrices</h2>
+    <table id="resultSum">
+        <tr>
+            <td><span id="sum00"></span></td>
+            <td><span id="sum01"></span></td>
+            <td><span id="sum02"></span></td>
+        </tr>
+        <tr>
+            <td><span id="sum10"></span></td>
+            <td><span id="sum11"></span></td>
+            <td><span id="sum12"></span></td>
+        </tr>
+        <tr>
+            <td><span id="sum20"></span></td>
+            <td><span id="sum21"></span></td>
+            <td><span id="sum22"></span></td>
+        </tr>
+    </table>
+
+    <h2>Resultado de la Resta de Matrices</h2>
+    <table id="resultSub">
+        <tr>
+            <td><span id="sub00"></span></td>
+            <td><span id="sub01"></span></td>
+            <td><span id="sub02"></span></td>
+        </tr>
+        <tr>
+            <td><span id="sub10"></span></td>
+            <td><span id="sub11"></span></td>
+            <td><span id="sub12"></span></td>
+        </tr>
+        <tr>
+            <td><span id="sub20"></span></td>
+            <td><span id="sub21"></span></td>
+            <td><span id="sub22"></span></td>
+        </tr>
+    </table>
+
+    <button onclick="calculateSumAndSubtract()">Calcular</button>
+    
+  <h1>Calculo de Transpuesta y Determinante</h1>
+  <h2>Ingrese los valores de la Matriz</h2>
+  <label for="a11">a11:</label>
+  <input type="number" id="a11" placeholder="Ingrese a11">
+  <label for="a12">a12:</label>
+  <input type="number" id="a12" placeholder="Ingrese a12">
+  <br>
+  <label for="a21">a21:</label>
+  <input type="number" id="a21" placeholder="Ingrese a21">
+  <label for="a22">a22:</label>
+  <input type="number" id="a22" placeholder="Ingrese a22">
+  <br>
+
+  <button onclick="calcularTranspuesta()">Calcular Transpuesta</button>
+  <button onclick="calcularDeterminante()">Calcular Determinante</button>
+  
+
+  <h2>Matriz Transpuesta</h2>
+  <table border="1">
+    <tr>
+      <td id="at11">-</td>
+      <td id="at12">-</td>
+    </tr>
+    <tr>
+      <td id="at21">-</td>
+      <td id="at22">-</td>
+    </tr>
+  </table>
+
+  <h2>Determinante de la Matriz</h2>
+  <p id="resultado">-</p>
+
+  <script src="scrip.js"></script>
+
+</body>
+</html>
